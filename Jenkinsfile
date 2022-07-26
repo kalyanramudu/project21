@@ -9,7 +9,6 @@ pipeline {
             steps {
                 echo 'Running build automation'
                 sh "chmod +x gradlew"
-                sh "gradle wrapper"
                 sh './gradlew build --no-daemon'
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
