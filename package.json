@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "/.gradle/npm/npm-v5.6.0/lib/node_modules/npm/bin/"
+    "test": "./node_modules/.bin/mocha"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
